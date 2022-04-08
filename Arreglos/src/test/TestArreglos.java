@@ -14,7 +14,7 @@ public class TestArreglos {
                 "\n" + "Edades 2: " + edades[2]);
 
         for(int i = 0; i < edades.length; i++){
-            System.out.println("Edades elementos " + i + ": " + edades[i]);
+            System.out.println("Edad elemento " + i + ": " + edades[i]);
         }
 
         //resumida
