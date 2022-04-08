@@ -1,5 +1,6 @@
 package domain;
 
+//PADRE
 public class Persona {
     protected String nombre;
     protected char genero;
