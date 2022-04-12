@@ -4,8 +4,9 @@ public class DispositivoEntrada {
     protected String tipoEntrada;
     protected String marca;
 
-    public void DispositivoEntrada(){
-
+    public DispositivoEntrada(String tipoEntrada, String marca){
+        this.tipoEntrada = tipoEntrada;
+        this.marca = marca;
     }
 
     @Override
@@ -15,7 +16,7 @@ public class DispositivoEntrada {
     }
 
     public String getTipoEntrada() {
-        return tipoEntrada;
+        return this.tipoEntrada;
     }
 
     public void setTipoEntrada(String tipoEntrada) {
@@ -23,7 +24,7 @@ public class DispositivoEntrada {
     }
 
     public String getMarca() {
-        return marca;
+        return this.marca;
     }
 
     public void setMarca(String marca) {

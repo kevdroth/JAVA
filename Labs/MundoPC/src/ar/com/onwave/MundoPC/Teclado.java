@@ -1,17 +1,19 @@
 package ar.com.onwave.MundoPC;
 
 public class Teclado extends DispositivoEntrada{
-    private int idTeclado;
+    private final int idTeclado;
     private static int contadorTeclados;
 
-    public Teclado(){
-        idTeclado = ++Teclado.contadorTeclados;
+    public Teclado(String tipoEntrada, String marca){
+        super(tipoEntrada, marca);
+        this.idTeclado = ++Teclado.contadorTeclados;
     }
 
     @Override
     public String toString() {
-        return "Tipo Entrada: " + tipoEntrada +
-                ", Marca: " + marca +
-                ", idTeclado: " + idTeclado;
+        StringBuilder sb = new StringBuilder();
+        sb.append("ID Teclado: ").append(idTeclado);
+        sb.append(super.toString());
+        return sb.toString();
     }
 }

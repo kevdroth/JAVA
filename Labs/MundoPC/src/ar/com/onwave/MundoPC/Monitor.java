@@ -1,49 +1,46 @@
 package ar.com.onwave.MundoPC;
 
 public class Monitor {
-    private static int idMonitor;
+    private final int idMonitor;
     private String marca;
-    private double tamaño;
+    private double tamanio;
     private static int contadorMonitores;
 
-    public Monitor(){
-        idMonitor = ++contadorMonitores;
+    private Monitor(){
+        this.idMonitor = ++Monitor.contadorMonitores;
     }
 
-    public Monitor(String marca, double tamaño){
+    public Monitor(String marca, double tamanio){
+        this();
         this.marca = marca;
-        this.tamaño = tamaño;
+        this.tamanio = tamanio;
     }
 
     @Override
     public String toString() {
         return "ID Monitor: " + idMonitor +
                 ", Marca: " + marca +
-                ", Tamaño: " + tamaño;
+                ", Tamaño: " + tamanio;
     }
 
     public int getIdMonitor() {
-        return idMonitor;
+        return this.idMonitor;
     }
 
     public String getMarca() {
-        return marca;
+        return this.marca;
     }
 
     public void setMarca(String marca) {
         this.marca = marca;
     }
 
-    public double getTamaño() {
-        return tamaño;
+    public double getTamanio() {
+        return this.tamanio;
     }
 
-    public void setTamaño(double tamaño) {
-        this.tamaño = tamaño;
-    }
-
-    public static int getContadorMonitores() {
-        return contadorMonitores;
+    public void setTamanio(double tamanio) {
+        this.tamanio = tamanio;
     }
 
 }
