@@ -11,14 +11,6 @@ public class MundoTech {
 
         Orden orden1 = new Orden();
         orden1.agregarComputadora(gamer);
-        orden1.agregarComputadora(gamer);
-        orden1.agregarComputadora(gamer);
-        orden1.agregarComputadora(gamer);
-        orden1.agregarComputadora(gamer);
-        orden1.agregarComputadora(gamer);
-        orden1.agregarComputadora(gamer);
-        orden1.agregarComputadora(gamer);
-        orden1.agregarComputadora(gamer);
         orden1.mostrarOrden();
     }
 }

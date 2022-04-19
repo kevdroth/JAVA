@@ -20,7 +20,6 @@ public class Orden {
             System.out.println("Se supero el maximo de PCs: " + Orden.MAX_COMPUTADORAS);
         }
     }
-
     public void mostrarOrden(){
         System.out.println("Orden ID: " + this.idOrden);
         for (int i=0; i < contadorComputadoras; i++){
