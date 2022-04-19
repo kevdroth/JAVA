@@ -22,11 +22,11 @@ public class Computadora {
 
     public String toString(){
         StringBuilder sb = new StringBuilder();
-        sb.append("ID Computadora: ").append(idComputadora);
-        sb.append("Nombre: ").append(nombre);
-        sb.append("Monitor: ").append(monitor);
-        sb.append("Teclado: ").append(teclado);
-        sb.append("Raton: ").append(raton);
+        sb.append(" ID Computadora: ").append(idComputadora);
+        sb.append(" Nombre: ").append(nombre);
+        sb.append(" Monitor: ").append(monitor);
+        sb.append(" Teclado: ").append(teclado);
+        sb.append(" Raton: ").append(raton);
         return sb.toString();
     }
 
