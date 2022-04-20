@@ -1,5 +1,8 @@
 package domain;
 
+/*las clases abstractas se usan para no dejar que se creen objetos de su tipo. Tienen metodos que se definen
+en tiempo de ejecucion.*/
+
 public abstract class FiguraGeometrica {
     protected String tipoFigura;
 
