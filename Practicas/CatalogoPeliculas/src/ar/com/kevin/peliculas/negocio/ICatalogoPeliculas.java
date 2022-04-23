@@ -2,12 +2,14 @@ package ar.com.kevin.peliculas.negocio;
 
 public interface ICatalogoPeliculas {
 
-    void agregarPelicula(String nombrePelicula, String nombreArchivo);
+    String NOMBRE_ARCHIVO = "peliculas.txt";
 
-    void listarPeliculas(String nombreArchivo);
+    void agregarPelicula(String nombrePelicula);
 
-    void buscarPelicula(String nombreArchivo, String buscar);
+    void listarPeliculas();
 
-    void iniciarArchivo(String nombreArchivo);
+    void buscarPelicula(String buscar);
+
+    void iniciarArchivo();
 
 }

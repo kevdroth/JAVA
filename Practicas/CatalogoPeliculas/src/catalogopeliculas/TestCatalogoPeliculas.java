@@ -1,13 +1,52 @@
 package catalogopeliculas;
 
+import ar.com.kevin.peliculas.negocio.CatalogoPeliculasImpl;
 import ar.com.kevin.peliculas.negocio.ICatalogoPeliculas;
+
+import java.util.Scanner;
+
+import static java.lang.Integer.parseInt;
 
 public class TestCatalogoPeliculas {
     public static void main(String[] args) {
 
-        int opcion;
-        String nombreArchivo;
-        ICatalogoPeliculas catalogoPeliculas;
+        var opcion = -1;
+        var scanner = new Scanner(System.in);
+        var catalogoPeliculas = new CatalogoPeliculasImpl();
 
+        while (opcion != 0){
+            System.out.println("Elige una opcion: \n " +
+                    "1. Iniciar catalogo de peliculas \n " +
+                    "2. Agregar pelicula \n " +
+                    "3. Listar peliculas \n " +
+                    "4. Buscar pelicula \n " +
+                    "0. Salir");
+            opcion = Integer.parseInt(scanner.nextLine());
+
+            switch (opcion){
+                case 1:
+                    catalogoPeliculas.iniciarArchivo();
+                    break;
+                case 2:
+                    System.out.println("Introduce el nombre de la pelicula: ");
+                    var nombrePelicula = scanner.nextLine();
+                    catalogoPeliculas.agregarPelicula(nombrePelicula);
+                    break;
+                case 3:
+                    catalogoPeliculas.listarPeliculas();
+                    break;
+                case 4:
+                    System.out.println("Introduce una pelicula a buscar: ");
+                    var buscar = scanner.nextLine();
+                    catalogoPeliculas.buscarPelicula(buscar);
+                    break;
+                case 0:
+                    System.out.println("Hasta pronto! ");
+                    break;
+                default:
+                    System.out.println("Opcion no reconocida");
+                    break;
+            }
+        }
     }
 }
