@@ -2,15 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0841efc1-ede2-47b5-b44f-1db0021c287c" name="Changes" comment="Practica">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/EncontrarFaltante.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/EncontrarFaltante/domain/Tablas.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/EncontrarFaltante/test/TestEncontrarFaltante.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/domain/Tablas.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/TestEncontrarFaltante.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,7 +38,8 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false"
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/Kh31N/Documents/Git/JAVA/Practicas/EncontrarFaltante"
   }
 }]]></component>
   <component name="RunManager">
@@ -79,6 +73,7 @@
       <workItem from="1650911857611" duration="4454000" />
       <workItem from="1650917111755" duration="2098000" />
       <workItem from="1650979493906" duration="4174000" />
+      <workItem from="1650983879594" duration="541000" />
     </task>
     <task id="LOCAL-00001" summary="Practica">
       <created>1650916276041</created>
