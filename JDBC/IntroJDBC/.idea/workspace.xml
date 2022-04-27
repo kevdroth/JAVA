@@ -1,9 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="0841efc1-ede2-47b5-b44f-1db0021c287c" name="Changes" comment="Practica">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
+    <list default="true" id="59297ee3-9039-494a-a698-c9b1c307ff30" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/test/TestMySqlJDBC.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Practicas/EncontrarFaltante/.idea/workspace.xml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,7 +30,7 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectId" id="28IlCmu91GqwfCUkdeoCeAavFFH" />
+  <component name="ProjectId" id="28OT3HYzOAESksAFKC4D0ERkB3t" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
@@ -33,19 +40,25 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/Kh31N/Documents/Git/JAVA/Practicas/EncontrarFaltante"
+    "last_opened_file_path": "C:/Users/Kh31N/.m2/repository/com/google/protobuf/protobuf-java/3.11.4",
+    "project.structure.last.edited": "Libraries",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "project.propCompiler"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Kh31N\Documents\Git\JAVA\JDBC\IntroJDBC\src\test" />
+    </key>
+  </component>
   <component name="RunManager">
-    <configuration name="TestEncontrarFaltante" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="test.TestEncontrarFaltante" />
-      <module name="EncontrarFaltante" />
+    <configuration name="TestMySqlJDBC" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="test.TestMySqlJDBC" />
+      <module name="IntroJDBC" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="test.*" />
@@ -58,31 +71,20 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.TestEncontrarFaltante" />
+        <item itemvalue="Application.TestMySqlJDBC" />
       </list>
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="0841efc1-ede2-47b5-b44f-1db0021c287c" name="Changes" comment="" />
-      <created>1650911856280</created>
+      <changelist id="59297ee3-9039-494a-a698-c9b1c307ff30" name="Changes" comment="" />
+      <created>1651086431578</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1650911856280</updated>
-      <workItem from="1650911857611" duration="4454000" />
-      <workItem from="1650917111755" duration="2098000" />
-      <workItem from="1650979493906" duration="4174000" />
-      <workItem from="1650983879594" duration="541000" />
+      <updated>1651086431578</updated>
+      <workItem from="1651086432742" duration="1649000" />
     </task>
-    <task id="LOCAL-00001" summary="Practica">
-      <created>1650916276041</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1650916276041</updated>
-    </task>
-    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -98,10 +100,5 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="VcsManagerConfiguration">
-    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Practica" />
-    <option name="LAST_COMMIT_MESSAGE" value="Practica" />
   </component>
 </project>
