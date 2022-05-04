@@ -20,7 +20,7 @@ public class UsuarioDAO {
             stmt = conn.prepareStatement(SQL_INSERT);
             stmt.setString(1,usuario.getUsuario());
             stmt.setString(2,usuario.getPassword());
-            stmt.executeUpdate();
+            registros = stmt.executeUpdate();
         } catch (SQLException e) {
             e.printStackTrace(System.out);
         }finally {
