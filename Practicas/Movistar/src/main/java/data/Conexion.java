@@ -6,7 +6,7 @@ import javax.sql.*;
 import java.sql.*;
 
 public class Conexion {
-    private static final String JDBC_URL = "jdbc:mysql://localhost:3306/test?useSSL=false&useTimezone=true&serverTimezone=UTC&allowPublicKeyRetrieval=true";
+    private static final String JDBC_URL = "jdbc:mysql://localhost:3306/movistar?useSSL=false&useTimezone=true&serverTimezone=UTC&allowPublicKeyRetrieval=true";
     private static final String JDBC_USER = "root";
     private static final String JDBC_PASS = "admin";
 
@@ -15,7 +15,6 @@ public class Conexion {
         ds.setUrl(JDBC_URL);
         ds.setUsername(JDBC_USER);
         ds.setPassword(JDBC_PASS);
-        //definicion de tamaño inicial de pool de conexiones
         ds.setInitialSize(5);
         return ds;
     }

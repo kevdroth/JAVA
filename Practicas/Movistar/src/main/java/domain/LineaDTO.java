@@ -1,7 +1,8 @@
 package domain;
 
 public class LineaDTO {
-    private int idLinea;
+    private int idLineaUsuario;
+    private String linea;
     private String usuario;
     private String equipo;
     private String plan;
@@ -10,23 +11,24 @@ public class LineaDTO {
 
     }
 
-    public LineaDTO(int idLinea) {
-        this.idLinea = idLinea;
+    public LineaDTO(int idLineaUsuario) {
+        this.idLineaUsuario = idLineaUsuario;
     }
 
-    public LineaDTO(int idLinea, String usuario, String equipo, String plan) {
-        this.idLinea = idLinea;
+    public LineaDTO(int idLineaUsuario, String linea, String usuario, String equipo, String plan) {
+        this.idLineaUsuario = idLineaUsuario;
+        this.linea = linea;
         this.usuario = usuario;
         this.equipo = equipo;
         this.plan = plan;
     }
 
-    public int getIdLinea() {
-        return this.idLinea;
+    public int getIdLineaUsuario() {
+        return this.idLineaUsuario;
     }
 
-    public void setIdLinea(int idLinea) {
-        this.idLinea = idLinea;
+    public void setIdLineaUsuario(int idLineaUsuario) {
+        this.idLineaUsuario = idLineaUsuario;
     }
 
     public String getUsuario() {
@@ -53,9 +55,18 @@ public class LineaDTO {
         this.equipo = equipo;
     }
 
+    public String getLinea() {
+        return this.linea;
+    }
+
+    public void setLinea(String linea) {
+        this.linea = linea;
+    }
+
     @Override
     public String toString() {
-        return "Linea: " + idLinea + '\'' +
+        return "ID LINEA USUARIO: " + idLineaUsuario + '\'' +
+                ", Linea: " + linea + '\'' +
                 ", Usuario: " + usuario + '\'' +
                 ", Equipo: " + equipo + '\'' +
                 ", Plan: " + plan + '\'';

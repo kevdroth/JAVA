@@ -12,16 +12,16 @@ import static data.Conexion.close;
 public class LineaDaoJDBC implements LineaDao {
 
     private Connection conexionTransaccional;
-    private static final String SQL_SELECT = "SELECT id_persona, nombre, apellido, email, telefono FROM persona";
+    private static final String SQL_SELECT = "SELECT id_linea_x_usuario, id_usuario, id_linea, id_equipo, id_plan FROM movistar.linea_x_usuario";
     private static final String SQL_INSERT = "INSERT INTO persona(nombre, apellido, email, telefono) VALUES(?, ?, ?, ?)";
     private static final String SQL_UPDATE = "UPDATE persona SET nombre = ?, apellido = ?, email = ?, telefono = ? WHERE id_persona = ?";
     private static final String SQL_DELETE = "DELETE FROM persona WHERE id_persona = ?";
 
-    public LineaDaoJDBC(){
+    public LineaDaoJDBC() {
 
     }
 
-    public LineaDaoJDBC(Connection conexionTransaccional){
+    public LineaDaoJDBC(Connection conexionTransaccional) {
         this.conexionTransaccional = conexionTransaccional;
     }
 
@@ -29,27 +29,27 @@ public class LineaDaoJDBC implements LineaDao {
         Connection conn = null;
         PreparedStatement stmt = null;
         ResultSet rs = null;
-        LineaDTO linea = null;
+        LineaDTO lineaDTO = null;
         List<LineaDTO> lineas = new ArrayList<>();
 
         try {
             conn = this.conexionTransaccional != null ? this.conexionTransaccional : Conexion.getConection();
             stmt = conn.prepareStatement(SQL_SELECT);
             rs = stmt.executeQuery();
-            while (rs.next()){
-                int idPersona = rs.getInt("id_persona");
-                String nombre = rs.getString("nombre");
-                String apellido = rs.getString("apellido");
-                String email = rs.getString("email");
-                String telefono = rs.getString("telefono");
-                linea = new LineaDTO(idPersona,nombre,apellido,email,telefono);
-                lineas.add(linea);
+            while (rs.next()) {
+                int idLineaUsuario = rs.getInt("id_linea_x_usuario");
+                String linea = rs.getString("id_linea");
+                String usuario = rs.getString("id_usuario");
+                String equipo = rs.getString("id_equipo");
+                String plan = rs.getString("id_plan");
+                lineaDTO = new LineaDTO(idLineaUsuario, linea, usuario, equipo, plan);
+                lineas.add(lineaDTO);
             }
-        }finally {
+        } finally {
             try {
                 close(rs);
                 close(stmt);
-                if (this.conexionTransaccional == null){
+                if (this.conexionTransaccional == null) {
                     close(conn);
                 }
             } catch (SQLException e) {
@@ -66,15 +66,15 @@ public class LineaDaoJDBC implements LineaDao {
         try {
             conn = this.conexionTransaccional != null ? this.conexionTransaccional : Conexion.getConection();
             stmt = conn.prepareStatement(SQL_INSERT);
-            stmt.setString(1, persona.getNombre());
-            stmt.setString(2, persona.getApellido());
-            stmt.setString(3, persona.getEmail());
-            stmt.setString(4, persona.getTelefono());
+            stmt.setString(1, linea.getUsuario());
+            stmt.setString(2, linea.getLinea());
+            stmt.setString(3, linea.getEquipo());
+            stmt.setString(4, linea.getPlan());
             registros = stmt.executeUpdate();
-        }finally {
+        } finally {
             try {
                 close(stmt);
-                if (this.conexionTransaccional == null){
+                if (this.conexionTransaccional == null) {
                     close(conn);
                 }
             } catch (SQLException e) {
@@ -91,16 +91,15 @@ public class LineaDaoJDBC implements LineaDao {
         try {
             conn = this.conexionTransaccional != null ? this.conexionTransaccional : Conexion.getConection();
             stmt = conn.prepareStatement(SQL_UPDATE);
-            stmt.setString(1, persona.getNombre());
-            stmt.setString(2, persona.getApellido());
-            stmt.setString(3, persona.getEmail());
-            stmt.setString(4, persona.getTelefono());
-            stmt.setInt(5,persona.getIdPersona());
+            stmt.setString(1, linea.getUsuario());
+            stmt.setString(2, linea.getLinea());
+            stmt.setString(3, linea.getEquipo());
+            stmt.setString(4, linea.getPlan());
             registros = stmt.executeUpdate();
-        }finally {
+        } finally {
             try {
                 close(stmt);
-                if (this.conexionTransaccional == null){
+                if (this.conexionTransaccional == null) {
                     close(conn);
                 }
             } catch (SQLException e) {
@@ -117,12 +116,12 @@ public class LineaDaoJDBC implements LineaDao {
         try {
             conn = this.conexionTransaccional != null ? this.conexionTransaccional : Conexion.getConection();
             stmt = conn.prepareStatement(SQL_DELETE);
-            stmt.setInt(1, persona.getIdPersona());
+            stmt.setInt(1, linea.getIdLineaUsuario());
             registros = stmt.executeUpdate();
-        }finally {
+        } finally {
             try {
                 close(stmt);
-                if (this.conexionTransaccional == null){
+                if (this.conexionTransaccional == null) {
                     close(conn);
                 }
             } catch (SQLException e) {
@@ -130,4 +129,5 @@ public class LineaDaoJDBC implements LineaDao {
             }
         }
         return registros;
+    }
 }
