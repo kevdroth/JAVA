@@ -1,56 +1,46 @@
--- MySQL dump 10.13  Distrib 8.0.29, for Win64 (x86_64)
---
--- Host: localhost    Database: movistar
--- ------------------------------------------------------
--- Server version	8.0.29
+create table equipos
+(
+    id              int not null auto_increment,
+    registrado      varchar(45),
+    imei_registrado varchar(45),
+    marca_trafica   varchar(45),
+    modelo_trafica  varchar(45),
+    imei_trafica    varchar(45),
+    sim             varchar(45),
+    constraint pk_equipos primary key (id),
+    constraint uc_imei_registrado unique (imei_registrado)
+);
 
-/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
-/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
-/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!50503 SET NAMES utf8 */;
-/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
-/*!40103 SET TIME_ZONE='+00:00' */;
-/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
-/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
-/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
-/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
-
---
--- Table structure for table `equipos`
---
-
-DROP TABLE IF EXISTS `equipos`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
-CREATE TABLE `equipos` (
-  `id_equipo` int NOT NULL AUTO_INCREMENT,
-  `registrado` varchar(45) DEFAULT NULL,
-  `imei_registrado` varchar(45) DEFAULT NULL,
-  `marca_trafica` varchar(45) DEFAULT NULL,
-  `modelo_trafica` varchar(45) DEFAULT NULL,
-  `imei_trafica` varchar(45) DEFAULT NULL,
-  `sim` varchar(45) DEFAULT NULL,
-  PRIMARY KEY (`id_equipo`)
-) ENGINE=InnoDB AUTO_INCREMENT=17 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
-/*!40101 SET character_set_client = @saved_cs_client */;
-
---
--- Dumping data for table `equipos`
---
-
-LOCK TABLES `equipos` WRITE;
-/*!40000 ALTER TABLE `equipos` DISABLE KEYS */;
-INSERT INTO `equipos` VALUES (1,'Samsung Galaxy J1 Ace 4g Lte Blanco','356438086518265','Samsung','Galaxy A02s','358008303736376','8954078144700707212'),(2,'Samsung Galaxy A02s 4g Azul','358008303736376','Samsung','Samsung SM-J111M','358678077268226','8954079144222024889'),(3,'Lg K8 2017 4g Lte Indigo','354651080708821','Motorola','Moto G (3rd Gen), CA12459545','358991062031032','8954073144402237984'),(4,'Samsung Galaxy A02s 4g Azul','358008303662200','Samsung','Samsung Galaxy A02s 4g Azul','358008303662200','8954076144485786599'),(5,'Motorola Moto G8 4g Azul','353576111350528','Motorola','Motorola Moto G8 4g Azul','353576111350528','8954075144220503300'),(6,'Samsung J2 Prime 16gb 4g Dorado Metalico','359978090210141','Samsung','Samsung SM-J111M','358678078321347','8954078144135730524'),(7,'Samsung J2 Prime 16gb 4g Negro','352940099168776','Samsung','Samsung J2 Prime 16gb 4g Negro','352940099168776','8954073144276631791'),(8,'Samsung Galaxy A03s Azul','355924409131531','Samsung','Samsung Galaxy A03s Azul','355924409131531','8954073144346230459'),(9,'Samsung Galaxy A10s 4g Negro','357079109951890','Motorola','Guam20','357809931656113','8954071144515308609'),(10,'Samsung Galaxy J3 2016 4g Lte Negro','359931074644983','Samsung','Samsung Galaxy J3 2016 4g Lte Negro','359931074644983','8954073144179584709'),(11,'Nokia 302 Blanco -2gb','354146050000440','Samsung','Samsung SM-G532M','359978090210141','8954073144278150568'),(12,'Motorola Motokey Social-2gb','359492040677797','Blackview','BLACKVIEW, BV8000 Pro','359705081172620','8954075144196964882'),(13,'Samsung Galaxy A50 4g Blanco','357647100195087','Samsung','Samsung Galaxy A50 4g Blanco','357647100195087','8954071144023026131'),(14,'Samsung Galaxy J5 Prime 4g Lte Negro','354621085918030','Samsung','Samsung Galaxy J2 Prime','352940097699871','8954073144278165764'),(15,'Samsung Galaxy A02 64gb 4g Negro','353256482133569','Samsung','Samsung Galaxy A02 64gb 4g Negro','353256482133569','8954076144537970365'),(16,'Samsung Galaxy J7 Neo 4g Negro','352825094524075','Samsung','Samsung Galaxy J7 Neo 4g Negro','352825094524075','8954078100331562673');
-/*!40000 ALTER TABLE `equipos` ENABLE KEYS */;
-UNLOCK TABLES;
-/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
-
-/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
-/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
-/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
-/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
-/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
-/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
-/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
-
--- Dump completed on 2022-05-14 20:18:22
+insert into equipos(registrado, imei_registrado, marca_trafica, modelo_trafica, imei_trafica, sim)
+values ('Samsung Galaxy J1 Ace 4g Lte Blanco', '356438086518265', 'Samsung', 'Galaxy A02s', '358008303736376',
+        '8954078144700707212'),
+       ('Samsung Galaxy A02s 4g Azul', '358008303736376', 'Samsung', 'Samsung SM-J111M', '358678077268226',
+        '8954079144222024889'),
+       ('Lg K8 2017 4g Lte Indigo', '354651080708821', 'Motorola', 'Moto G (3rd Gen), CA12459545', '358991062031032',
+        '8954073144402237984'),
+       ('Samsung Galaxy A02s 4g Azul', '358008303662200', 'Samsung', 'Samsung Galaxy A02s 4g Azul',
+        '358008303662200', '8954076144485786599'),
+       ('Motorola Moto G8 4g Azul', '353576111350528', 'Motorola', 'Motorola Moto G8 4g Azul', '353576111350528',
+        '8954075144220503300'),
+       ('Samsung J2 Prime 16gb 4g Dorado Metalico', '359978090210141', 'Samsung', 'Samsung SM-J111M',
+        '358678078321347', '8954078144135730524'),
+       ('Samsung J2 Prime 16gb 4g Negro', '352940099168776', 'Samsung', 'Samsung J2 Prime 16gb 4g Negro',
+        '352940099168776', '8954073144276631791'),
+       ('Samsung Galaxy A03s Azul', '355924409131531', 'Samsung', 'Samsung Galaxy A03s Azul', '355924409131531',
+        '8954073144346230459'),
+       ('Samsung Galaxy A10s 4g Negro', '357079109951890', 'Motorola', 'Guam20', '357809931656113',
+        '8954071144515308609'),
+       ('Samsung Galaxy J3 2016 4g Lte Negro', '359931074644983', 'Samsung', 'Samsung Galaxy J3 2016 4g Lte Negro',
+        '359931074644983', '8954073144179584709'),
+       ('Nokia 302 Blanco -2gb', '354146050000440', 'Samsung', 'Samsung SM-G532M', '359978090210141',
+        '8954073144278150568'),
+       ('Motorola Motokey Social-2gb', '359492040677797', 'Blackview', 'BLACKVIEW, BV8000 Pro', '359705081172620',
+        '8954075144196964882'),
+       ('Samsung Galaxy A50 4g Blanco', '357647100195087', 'Samsung', 'Samsung Galaxy A50 4g Blanco',
+        '357647100195087', '8954071144023026131'),
+       ('Samsung Galaxy J5 Prime 4g Lte Negro', '354621085918030', 'Samsung', 'Samsung Galaxy J2 Prime',
+        '352940097699871', '8954073144278165764'),
+       ('Samsung Galaxy A02 64gb 4g Negro', '353256482133569', 'Samsung', 'Samsung Galaxy A02 64gb 4g Negro',
+        '353256482133569', '8954076144537970365'),
+       ('Samsung Galaxy J7 Neo 4g Negro', '352825094524075', 'Samsung', 'Samsung Galaxy J7 Neo 4g Negro',
+        '352825094524075', '8954078100331562673');

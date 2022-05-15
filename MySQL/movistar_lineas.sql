@@ -1,51 +1,28 @@
--- MySQL dump 10.13  Distrib 8.0.29, for Win64 (x86_64)
---
--- Host: localhost    Database: movistar
--- ------------------------------------------------------
--- Server version	8.0.29
+drop table if exists lineas;
 
-/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
-/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
-/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!50503 SET NAMES utf8 */;
-/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
-/*!40103 SET TIME_ZONE='+00:00' */;
-/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
-/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
-/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
-/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+create table lineas
+(
+    id      int not null auto_increment,
+    id_plan int not null,
+    numero  varchar(45),
+    constraint pk_lineas primary key (id),
+    constraint fk_id_plan foreign key (id_plan) references planes (id)
+);
 
---
--- Table structure for table `lineas`
---
-
-DROP TABLE IF EXISTS `lineas`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
-CREATE TABLE `lineas` (
-  `id_linea` int NOT NULL AUTO_INCREMENT,
-  `numero` varchar(45) DEFAULT NULL,
-  PRIMARY KEY (`id_linea`)
-) ENGINE=InnoDB AUTO_INCREMENT=17 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
-/*!40101 SET character_set_client = @saved_cs_client */;
-
---
--- Dumping data for table `lineas`
---
-
-LOCK TABLES `lineas` WRITE;
-/*!40000 ALTER TABLE `lineas` DISABLE KEYS */;
-INSERT INTO `lineas` VALUES (1,'115-161-5361'),(2,'115-165-3819'),(3,'115-165-5430'),(4,'115-165-7653'),(5,'115-327-6861'),(6,'114-047-2441'),(7,'115-047-2566'),(8,'114-047-2674'),(9,'115-087-6318'),(10,'154-042-8233'),(11,'154-042-8253'),(12,'154-042-8338'),(13,'154-042-8445'),(14,'154-042-8572'),(15,'154-042-8586'),(16,'154-170-8803');
-/*!40000 ALTER TABLE `lineas` ENABLE KEYS */;
-UNLOCK TABLES;
-/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
-
-/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
-/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
-/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
-/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
-/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
-/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
-/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
-
--- Dump completed on 2022-05-14 20:18:22
+insert into lineas(numero, id_plan)
+values ('1151615361', (select id from planes where nombre = 'COMUNIDAD 5GB')),
+       ('1151653819', (select id from planes where nombre = 'COMUNIDAD 5GB')),
+       ('1151655430', (select id from planes where nombre = 'COMUNIDAD 5GB II')),
+       ('1151657653', (select id from planes where nombre = 'COMUNIDAD 5GB')),
+       ('1153276861', (select id from planes where nombre = 'COMUNIDAD 30GB')),
+       ('1140472441', (select id from planes where nombre = 'COMUNIDAD 5GB')),
+       ('1150472566', (select id from planes where nombre = 'COMUNIDAD 5GB')),
+       ('1140472674', (select id from planes where nombre = 'COMUNIDAD 5GB')),
+       ('1150876318', (select id from planes where nombre = 'COMUNIDAD 5GB')),
+       ('1540428233', (select id from planes where nombre = 'COMUNIDAD 5GB')),
+       ('1540428253', (select id from planes where nombre = 'COMUNIDAD 5GB II')),
+       ('1540428338', (select id from planes where nombre = 'COMUNIDAD 5GB')),
+       ('1540428445', (select id from planes where nombre = 'COMUNIDAD 12GB')),
+       ('1540428572', (select id from planes where nombre = 'COMUNIDAD 5GB')),
+       ('1540428586', (select id from planes where nombre = 'COMUNIDAD 5GB')),
+       ('1541708803', (select id from planes where nombre = 'COMUNIDAD 5GB'));
