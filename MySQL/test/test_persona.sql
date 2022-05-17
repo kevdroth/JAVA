@@ -1,6 +1,6 @@
 -- MySQL dump 10.13  Distrib 8.0.29, for Win64 (x86_64)
 --
--- Host: localhost    Database: movistar
+-- Host: localhost    Database: usuarios
 -- ------------------------------------------------------
 -- Server version	8.0.29
 
@@ -16,27 +16,30 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
--- Table structure for table `lineas`
+-- Table structure for table `persona`
 --
 
-DROP TABLE IF EXISTS `lineas`;
+DROP TABLE IF EXISTS `persona`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
-CREATE TABLE `lineas` (
-  `id_linea` int NOT NULL AUTO_INCREMENT,
-  `numero` varchar(45) DEFAULT NULL,
-  PRIMARY KEY (`id_linea`)
-) ENGINE=InnoDB AUTO_INCREMENT=17 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+CREATE TABLE `persona` (
+  `id_persona` int NOT NULL AUTO_INCREMENT,
+  `nombre` varchar(45) DEFAULT NULL,
+  `apellido` varchar(45) DEFAULT NULL,
+  `email` varchar(45) DEFAULT NULL,
+  `telefono` varchar(45) DEFAULT NULL,
+  PRIMARY KEY (`id_persona`)
+) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `lineas`
+-- Dumping data for table `persona`
 --
 
-LOCK TABLES `lineas` WRITE;
-/*!40000 ALTER TABLE `lineas` DISABLE KEYS */;
-INSERT INTO `lineas` VALUES (1,'115-161-5361'),(2,'115-165-3819'),(3,'115-165-5430'),(4,'115-165-7653'),(5,'115-327-6861'),(6,'114-047-2441'),(7,'115-047-2566'),(8,'114-047-2674'),(9,'115-087-6318'),(10,'154-042-8233'),(11,'154-042-8253'),(12,'154-042-8338'),(13,'154-042-8445'),(14,'154-042-8572'),(15,'154-042-8586'),(16,'154-170-8803');
-/*!40000 ALTER TABLE `lineas` ENABLE KEYS */;
+LOCK TABLES `persona` WRITE;
+/*!40000 ALTER TABLE `persona` DISABLE KEYS */;
+INSERT INTO `persona` VALUES (1,'Juan','Perez','jperez@mail.com','1173542615'),(2,'Carla','Larh','clarh@mail.com','1126458274'),(4,'Carlos','Esparza','cesparza@gmail.com','1186685214');
+/*!40000 ALTER TABLE `persona` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
@@ -48,4 +51,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2022-05-14 20:18:22
+-- Dump completed on 2022-05-15 13:02:15
