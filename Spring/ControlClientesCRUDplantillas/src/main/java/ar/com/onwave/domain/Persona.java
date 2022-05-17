@@ -1,6 +1,5 @@
 package ar.com.onwave.domain;
 
-import com.sun.istack.NotNull;
 import lombok.Data;
 
 import javax.persistence.*;
@@ -16,12 +15,8 @@ public class Persona implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long idPersona;
-
     private String nombre;
-
     private String apellido;
-
     private String email;
-
     private String telefono;
 }
