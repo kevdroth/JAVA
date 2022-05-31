@@ -28,7 +28,7 @@ public class PersonaDaoJDBC implements PersonaDao{
         Connection conn = null;
         PreparedStatement stmt = null;
         ResultSet rs = null;
-        PersonaDTO persona = null;
+        PersonaDTO persona;
         List<PersonaDTO> personas = new ArrayList<>();
 
         try {

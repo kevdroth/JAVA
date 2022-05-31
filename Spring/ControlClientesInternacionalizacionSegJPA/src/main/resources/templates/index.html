@@ -13,7 +13,7 @@
             <th>[[#{persona.nombre}]]</th>
             <th>[[#{persona.apellido}]]</th>
             <th>[[#{persona.email}]]</th>
-            <th>[[#{persona.email}]]</th>
+            <th>[[#{persona.telefono}]]</th>
             <th sec:authorize="hasRole('ROLE_ADMIN')">[[#{accion.editar}]]</th>
             <th sec:authorize="hasRole('ROLE_ADMIN')">[[#{accion.eliminar}]]</th>
         </tr>
@@ -22,8 +22,8 @@
             <td th:text="${persona.apellido}">Mostrar Apellido</td>
             <td th:text="${persona.email}">Mostrar Email</td>
             <td th:text="${persona.telefono}">Mostrar Telefono</td>
-            <td sec:authorize="hasRole('ROLE_ADMIN')"><a th:href="@{/editar/} + ${persona.idPersona}" />[[#{accion.editar}]]</td>
-            <td sec:authorize="hasRole('ROLE_ADMIN')"><a th:href="@{/eliminar/} + ${persona.idPersona}" />[[#{accion.eliminar}]]</td>
+            <td sec:authorize="hasRole('ROLE_ADMIN')"><a th:href="@{/editar/} + ${persona.idPersona}"></a>[[#{accion.editar}]]</td>
+            <td sec:authorize="hasRole('ROLE_ADMIN')"><a th:href="@{/eliminar/} + ${persona.idPersona}"></a>[[#{accion.eliminar}]]</td>
         </tr>
     </table>
 </div>

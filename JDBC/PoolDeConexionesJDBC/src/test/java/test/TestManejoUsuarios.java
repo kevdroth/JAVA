@@ -32,6 +32,7 @@ public class TestManejoUsuarios {
             e.printStackTrace(System.out);
             System.out.println("Entramos al rollback");
             try {
+                if (conexion != null)
                 conexion.rollback();
             } catch (SQLException ex) {
                 ex.printStackTrace(System.out);
