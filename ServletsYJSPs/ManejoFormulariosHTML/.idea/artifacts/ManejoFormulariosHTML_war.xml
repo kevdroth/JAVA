@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="ManejoFormulariosHTML:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>ManejoFormulariosHTML</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="ManejoFormulariosHTML-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="ManejoFormulariosHTML:war exploded" />
+    </root>
+  </artifact>
+</component>

@@ -2,10 +2,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Inicio</title>
+    <title>JSP - Hello World</title>
 </head>
 <body>
-<h1><%= "Llamando al Servlet" %></h1>
-<a href="/HolaMundoJavaWeb/HolaMundo">Servlet HolaMundo</a>
+<h1><%= "Hello World!" %>
+</h1>
+<br/>
+<a href="hello-servlet">Hello Servlet</a>
 </body>
 </html>
