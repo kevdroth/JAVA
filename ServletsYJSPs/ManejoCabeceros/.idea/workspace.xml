@@ -9,16 +9,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bc4899c4-9b36-49fb-9f62-e97fb6eeeb61" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../HolaMundoJavaWeb/HolaMundoJavaWeb.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/ManejoCabeceros_war.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/ManejoCabeceros_war_exploded.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ar/com/onwave/manejocabeceros/web/Servlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/index.html" afterDir="false" />
-    </list>
+    <list default="true" id="bc4899c4-9b36-49fb-9f62-e97fb6eeeb61" name="Changes" comment="S53" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -159,8 +150,16 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1654088047130</updated>
-      <workItem from="1654088048967" duration="1464000" />
+      <workItem from="1654088048967" duration="1554000" />
     </task>
+    <task id="LOCAL-00001" summary="S53">
+      <created>1654089601288</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1654089601288</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -179,5 +178,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="S53" />
+    <option name="LAST_COMMIT_MESSAGE" value="S53" />
   </component>
 </project>
