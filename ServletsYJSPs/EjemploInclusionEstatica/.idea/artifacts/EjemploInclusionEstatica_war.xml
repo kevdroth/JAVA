@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="EjemploInclusionEstatica:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>EjemploInclusionEstatica</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="EjemploInclusionEstatica-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="EjemploInclusionEstatica:war exploded" />
+    </root>
+  </artifact>
+</component>

@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="EjemploInclusionDinamica:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>EjemploInclusionDinamica</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="EjemploInclusionDinamica-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="EjemploInclusionDinamica:war exploded" />
+    </root>
+  </artifact>
+</component>
