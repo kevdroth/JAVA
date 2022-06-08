@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="ExpresionesJSP:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>ExpresionesJSP</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="ExpresionesJSP-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="ExpresionesJSP:war exploded" />
+    </root>
+  </artifact>
+</component>
