@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="ManejoJavaBeans:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>ManejoJavaBeans</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="ManejoJavaBeans-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="ManejoJavaBeans:war exploded" />
+    </root>
+  </artifact>
+</component>
