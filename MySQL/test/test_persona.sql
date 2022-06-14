@@ -19,7 +19,7 @@
 -- Table structure for table `persona`
 --
 
-DROP TABLE IF EXISTS `persona`;
+DROP TABLE IF EXISTS cliente;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `persona` (
@@ -36,10 +36,10 @@ CREATE TABLE `persona` (
 -- Dumping data for table `persona`
 --
 
-LOCK TABLES `persona` WRITE;
-/*!40000 ALTER TABLE `persona` DISABLE KEYS */;
-INSERT INTO `persona` VALUES (1,'Juan','Perez','jperez@mail.com','1173542615'),(2,'Carla','Larh','clarh@mail.com','1126458274'),(4,'Carlos','Esparza','cesparza@gmail.com','1186685214');
-/*!40000 ALTER TABLE `persona` ENABLE KEYS */;
+LOCK TABLES cliente WRITE;
+/*!40000 ALTER TABLE cliente DISABLE KEYS */;
+INSERT INTO cliente VALUES (1,'Juan','Perez','jperez@mail.com','1173542615'),(2,'Carla','Larh','clarh@mail.com','1126458274'),(4,'Carlos','Esparza','cesparza@gmail.com','1186685214');
+/*!40000 ALTER TABLE cliente ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
