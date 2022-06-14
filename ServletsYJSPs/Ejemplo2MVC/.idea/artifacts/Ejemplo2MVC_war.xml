@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="Ejemplo2MVC:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>Ejemplo2MVC</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="Ejemplo2MVC-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="Ejemplo2MVC:war exploded" />
+    </root>
+  </artifact>
+</component>
