@@ -21,7 +21,7 @@ public class PlanesDaoJDBC {
         Connection conn = null;
         PreparedStatement stmt = null;
         ResultSet rs = null;
-        Planes plan = null;
+        Planes plan;
         List<Planes> planes = new ArrayList<>();
         try {
             conn = Conexion.getConnection();
