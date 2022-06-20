@@ -19,9 +19,9 @@ public class ServletControlador extends HttpServlet {
         request.setAttribute("equipos", equipos);
         request.getRequestDispatcher("equipos.jsp").forward(request, response);
 
-        List<Planes> planes = new PlanesDaoJDBC().listar();
+/*        List<Planes> planes = new PlanesDaoJDBC().listar();
         request.setAttribute("planes", planes);
-        request.getRequestDispatcher("planes.jsp").forward(request, response);
+        request.getRequestDispatcher("planes.jsp").forward(request, response);*/
     }
 
     @Override
