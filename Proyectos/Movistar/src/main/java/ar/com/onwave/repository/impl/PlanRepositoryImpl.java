@@ -69,7 +69,7 @@ public class PlanRepositoryImpl implements PlanRepository {
         try {
             conn = Conexion.getConnection();
             stmt = conn.prepareStatement(SQL_SELECT_BY_ID);
-            stmt.setInt(1,"id_plan");
+//            stmt.setInt(1,"id_plan");
             rs = stmt.executeQuery();
             rs.absolute(1);
 
