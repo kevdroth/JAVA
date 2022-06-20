@@ -23,4 +23,7 @@ public class PlanController {
         return planService.getPlans();
     }
 
+    public int addPlan() {
+        return planService.addPlan();
+    }
 }

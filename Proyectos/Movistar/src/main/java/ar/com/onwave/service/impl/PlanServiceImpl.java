@@ -20,4 +20,9 @@ public class PlanServiceImpl implements PlanService {
     public List<PlanModel> getPlans() {
         return planRepository.findAllPlans();
     }
+
+    @Override
+    public int addPlan() {
+        return planRepository.addPlan(new PlanModel(4,"2",2000,"4","5","6"));
+    }
 }
