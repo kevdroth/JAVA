@@ -1,5 +1,7 @@
 package ar.com.onwave.controller;
 
+import ar.com.onwave.repository.PlanRepository;
+import ar.com.onwave.repository.impl.PlanRepositoryImpl;
 import ar.com.onwave.repository.model.PlanModel;
 import ar.com.onwave.service.PlanService;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -21,9 +23,5 @@ public class PlanController {
     @GetMapping
     public List<PlanModel> getPlans(){
         return planService.getPlans();
-    }
-
-    public int addPlan() {
-        return planService.addPlan();
     }
 }
