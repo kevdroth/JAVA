@@ -9,81 +9,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6973eeb3-9655-4957-aea1-797f65b733aa" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/paginas/cliente/agregarCliente.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/paginas/cliente/editarCliente.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/paginas/cliente/listadoClientes.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/paginas/comunes/botonesNavegacion.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/paginas/comunes/botonesNavegacionEdicion.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/paginas/comunes/cabecero.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/paginas/comunes/header.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/paginas/comunes/piePagina.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/ControlClientes_war.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/ControlClientes_war_exploded.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mvnw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mvnw.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ar/com/onwave/controlclientes/datos/ClienteDaoJDBC.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ar/com/onwave/controlclientes/datos/Conexion.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ar/com/onwave/controlclientes/dominio/Cliente.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ar/com/onwave/controlclientes/web/ServletControlador.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/datos/Conexion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/datos/Conexion.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/web/ServletControlador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/web/ServletControlador.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/clientes.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/clientes.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ControlClientesProfe/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ControlClientesProfe/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ControlClientesProfe/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ControlClientesProfe/.idea/jarRepositories.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ControlClientesProfe/.idea/jpa-buddy.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ControlClientesProfe/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ControlClientesProfe/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ControlClientesProfe/nb-configuration.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ControlClientesProfe/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ControlClientesProfe/src/main/java/datos/ClienteDaoJDBC.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ControlClientesProfe/src/main/java/datos/Conexion.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ControlClientesProfe/src/main/java/dominio/Cliente.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ControlClientesProfe/src/main/java/web/ServletControlador.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ControlClientesProfe/src/main/resources/META-INF/persistence.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ControlClientesProfe/src/main/webapp/WEB-INF/beans.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ControlClientesProfe/src/main/webapp/WEB-INF/web.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ControlClientesProfe/src/main/webapp/clientes.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ControlClientesProfe/src/main/webapp/index.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ControlClientesProfe/target/ControlClientes-1.0.war" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ControlClientesProfe/target/ControlClientes-1.0/WEB-INF/beans.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ControlClientesProfe/target/ControlClientes-1.0/WEB-INF/classes/META-INF/persistence.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ControlClientesProfe/target/ControlClientes-1.0/WEB-INF/classes/datos/ClienteDaoJDBC.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ControlClientesProfe/target/ControlClientes-1.0/WEB-INF/classes/datos/Conexion.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ControlClientesProfe/target/ControlClientes-1.0/WEB-INF/classes/dominio/Cliente.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ControlClientesProfe/target/ControlClientes-1.0/WEB-INF/classes/web/ServletControlador.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ControlClientesProfe/target/ControlClientes-1.0/WEB-INF/lib/commons-dbcp2-2.7.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ControlClientesProfe/target/ControlClientes-1.0/WEB-INF/lib/commons-logging-1.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ControlClientesProfe/target/ControlClientes-1.0/WEB-INF/lib/commons-pool2-2.7.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ControlClientesProfe/target/ControlClientes-1.0/WEB-INF/lib/mysql-connector-java-8.0.17.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ControlClientesProfe/target/ControlClientes-1.0/WEB-INF/lib/protobuf-java-3.6.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ControlClientesProfe/target/ControlClientes-1.0/WEB-INF/web.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ControlClientesProfe/target/ControlClientes-1.0/clientes.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ControlClientesProfe/target/ControlClientes-1.0/gfv5ee8.dpf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ControlClientesProfe/target/ControlClientes-1.0/index.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ControlClientesProfe/target/classes/META-INF/persistence.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ControlClientesProfe/target/classes/datos/ClienteDaoJDBC.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ControlClientesProfe/target/classes/datos/Conexion.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ControlClientesProfe/target/classes/dominio/Cliente.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ControlClientesProfe/target/classes/web/ServletControlador.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ControlClientesProfe/target/endorsed/javaee-api-8.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ControlClientesProfe/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ControlClientesProfe/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ControlClientesProfe/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ControlClientesProfe/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
+    <list default="true" id="6973eeb3-9655-4957-aea1-797f65b733aa" name="Changes" comment="S66">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -255,8 +182,18 @@
       <workItem from="1655307512271" duration="1880000" />
       <workItem from="1655311183612" duration="5616000" />
       <workItem from="1655341231218" duration="1656000" />
-      <workItem from="1655342925296" duration="145000" />
+      <workItem from="1655342925296" duration="824000" />
+      <workItem from="1655509014849" duration="666000" />
+      <workItem from="1655521693100" duration="23000" />
     </task>
+    <task id="LOCAL-00001" summary="S66">
+      <created>1655343150578</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1655343150578</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -275,5 +212,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="S66" />
+    <option name="LAST_COMMIT_MESSAGE" value="S66" />
   </component>
 </project>
