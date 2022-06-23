@@ -9,17 +9,22 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
 
 @RestController
-@RequestMapping("/api/v1/equipment")
+@RequestMapping("/api/v1/")
 public class EquipmentController {
 
-    private EquipmentService equipmentService;
+    private final EquipmentService equipmentService;
 
     public EquipmentController(EquipmentService equipmentService) {
         this.equipmentService = equipmentService;
     }
 
-    @GetMapping
+    @GetMapping("/equipments")
     public List<EquipmentModel> getEquipments() {
         return this.equipmentService.getEquipments();
+    }
+
+    @GetMapping("/equipment")
+    public List<EquipmentModel> getEquipment() {
+        return equipmentService.getEquipment();
     }
 }

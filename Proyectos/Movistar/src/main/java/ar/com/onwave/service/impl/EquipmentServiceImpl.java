@@ -19,4 +19,10 @@ public class EquipmentServiceImpl implements EquipmentService {
     public List<EquipmentModel> getEquipments() {
         return this.equipmentRepository.findAllEquipments();
     }
+
+    @Override
+    public List<EquipmentModel> getEquipment() {
+        return this.equipmentRepository.findEquipment("1");
+    }
+
 }
