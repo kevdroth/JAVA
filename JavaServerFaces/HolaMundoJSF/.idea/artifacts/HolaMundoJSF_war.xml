@@ -1,14 +1,14 @@
 <component name="ArtifactManager">
-  <artifact type="war" name="HolaMundoJavaEE:war">
+  <artifact type="war" name="HolaMundoJSF:war">
     <output-path>$PROJECT_DIR$/target</output-path>
     <properties id="maven-jee-properties">
       <options>
-        <module>HolaMundoJavaEE</module>
+        <module>HolaMundoJSF</module>
         <packaging>war</packaging>
       </options>
     </properties>
-    <root id="archive" name="HolaMundoJavaEE-1.0-SNAPSHOT.war">
-      <element id="artifact" artifact-name="HolaMundoJavaEE:war exploded" />
+    <root id="archive" name="HolaMundoJSF-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="HolaMundoJSF:war exploded" />
     </root>
   </artifact>
 </component>
