@@ -6,8 +6,8 @@ import java.util.List;
 
 public interface EquipmentService {
     List<EquipmentModel> getEquipments();
-    List<EquipmentModel> getEquipment(String idEquipo);
+    List<EquipmentModel> getEquipment(Long idEquipo);
     void addEquipment(EquipmentModel equipmentModel);
-    void removeEquipment(String idEquipo);
-    void modifyEquipment(EquipmentModel equipmentModel, String idEquipo);
+    void removeEquipment(Long idEquipo);
+    void modifyEquipment(EquipmentModel equipmentModel, Long idEquipo);
 }

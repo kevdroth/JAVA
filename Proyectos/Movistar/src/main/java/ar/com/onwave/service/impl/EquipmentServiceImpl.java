@@ -21,7 +21,7 @@ public class EquipmentServiceImpl implements EquipmentService {
     }
 
     @Override
-    public List<EquipmentModel> getEquipment(String idEquipo) {
+    public List<EquipmentModel> getEquipment(Long idEquipo) {
         return this.equipmentRepository.findEquipment(idEquipo);
     }
 
@@ -31,12 +31,12 @@ public class EquipmentServiceImpl implements EquipmentService {
     }
 
     @Override
-    public void removeEquipment(String idEquipo) {
+    public void removeEquipment(Long idEquipo) {
         this.equipmentRepository.deleteEquipment(idEquipo);
     }
 
     @Override
-    public void modifyEquipment(EquipmentModel equipmentModel, String idEquipo) {
+    public void modifyEquipment(EquipmentModel equipmentModel, Long idEquipo) {
         this.equipmentRepository.updateEquipment(equipmentModel, idEquipo);
     }
 

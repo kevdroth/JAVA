@@ -11,7 +11,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @JsonNaming(PropertyNamingStrategy.SnakeCaseStrategy.class)
 public class EquipmentModel {
-    String idEquipo;
+    Long idEquipo;
     String registrado;
     String imeiRegistrado;
     String marcaTrafica;

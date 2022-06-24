@@ -1,12 +1,11 @@
 package ar.com.onwave.repository.impl;
 
 import ar.com.onwave.repository.EquipmentRepository;
-import ar.com.onwave.repository.mapper.EquipmentRowMapper;
+import ar.com.onwave.repository.mapper.Equipment.EquipmentRowMapper;
 import ar.com.onwave.repository.model.EquipmentModel;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Component;
 
-import javax.sql.DataSource;
 import java.util.List;
 
 @Component
@@ -33,7 +32,7 @@ public class EquipmentRepositoryImpl implements EquipmentRepository {
     }
 
     @Override
-    public List<EquipmentModel> findEquipment(String idEquipo) {
+    public List<EquipmentModel> findEquipment(Long idEquipo) {
         return jdbcTemplate.query(SQL_SELECT_BY_ID, new Object[]{idEquipo}, new EquipmentRowMapper());
     }
 
@@ -45,12 +44,12 @@ public class EquipmentRepositoryImpl implements EquipmentRepository {
     }
 
     @Override
-    public void deleteEquipment(String idEquipo) {
+    public void deleteEquipment(Long idEquipo) {
         jdbcTemplate.update(SQL_DELETE, new Object[]{idEquipo});
     }
 
     @Override
-    public void updateEquipment(EquipmentModel equipmentModel, String idEquipo) {
+    public void updateEquipment(EquipmentModel equipmentModel, Long idEquipo) {
         jdbcTemplate.update(SQL_UPDATE, new Object[]{equipmentModel.getRegistrado(),
                 equipmentModel.getImeiRegistrado(), equipmentModel.getMarcaTrafica(), equipmentModel.getModeloTrafica(),
                 equipmentModel.getImeiTrafica(), equipmentModel.getSim(), idEquipo});

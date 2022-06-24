@@ -22,7 +22,7 @@ public class EquipmentController {
     }
 
     @GetMapping("/get/{id_equipo}")
-    public List<EquipmentModel> getEquipment(@PathVariable(name = "id_equipo") String idEquipo) {
+    public List<EquipmentModel> getEquipment(@PathVariable(name = "id_equipo") Long idEquipo) {
         return equipmentService.getEquipment(idEquipo);
     }
 
@@ -32,12 +32,12 @@ public class EquipmentController {
     }
 
     @GetMapping("remove/{id_equipo}")
-    public void removeEquipment(@PathVariable(name = "id_equipo") String idEquipo) {
+    public void removeEquipment(@PathVariable(name = "id_equipo") Long idEquipo) {
         equipmentService.removeEquipment(idEquipo);
     }
 
     @PostMapping("/update/{id_equipo}")
-    public void modifyEquipment(@RequestBody EquipmentModel equipmentModel, @PathVariable(name = "id_equipo") String idEquipo) {
+    public void modifyEquipment(@RequestBody EquipmentModel equipmentModel, @PathVariable(name = "id_equipo") Long idEquipo) {
         equipmentService.modifyEquipment(equipmentModel, idEquipo);
     }
 }

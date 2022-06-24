@@ -7,8 +7,8 @@ import java.util.List;
 
 public interface EquipmentRepository {
     List<EquipmentModel> findAllEquipments();
-    List<EquipmentModel> findEquipment(String idEquipo);
+    List<EquipmentModel> findEquipment(Long idEquipo);
     void createEquipment(EquipmentModel equipmentModel);
-    void deleteEquipment(String idEquipo);
-    void updateEquipment(EquipmentModel equipmentModel, String idEquipo);
+    void deleteEquipment(Long idEquipo);
+    void updateEquipment(EquipmentModel equipmentModel, Long idEquipo);
 }
