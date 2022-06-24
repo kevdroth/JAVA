@@ -19,6 +19,9 @@ public class EquipmentRepositoryImpl implements EquipmentRepository {
             "modelo_trafica, imei_trafica, sim FROM equipo WHERE id_equipo = ?";
     private static final String SQL_INSERT = "INSERT INTO equipo (registrado, imei_registrado, marca_trafica, modelo_trafica, " +
             "imei_trafica, sim) VALUES (?,?,?,?,?,?)";
+    private static final String SQL_DELETE = "DELETE FROM equipo WHERE id_equipo = ?";
+    private static final String SQL_UPDATE = "UPDATE equipo SET registrado = ?, imei_registrado = ?, marca_trafica = ?" +
+            ", modelo_trafica = ?, imei_trafica = ?, sim = ? WHERE id_equipo = ?";
 
     public EquipmentRepositoryImpl(JdbcTemplate jdbcTemplate) {
         this.jdbcTemplate = jdbcTemplate;
@@ -39,5 +42,17 @@ public class EquipmentRepositoryImpl implements EquipmentRepository {
         jdbcTemplate.update(SQL_INSERT, new Object[]{equipmentModel.getRegistrado(), equipmentModel.getImeiRegistrado(),
                 equipmentModel.getMarcaTrafica(), equipmentModel.getModeloTrafica(), equipmentModel.getImeiTrafica(),
                 equipmentModel.getSim()});
+    }
+
+    @Override
+    public void deleteEquipment(String idEquipo) {
+        jdbcTemplate.update(SQL_DELETE, new Object[]{idEquipo});
+    }
+
+    @Override
+    public void updateEquipment(EquipmentModel equipmentModel, String idEquipo) {
+        jdbcTemplate.update(SQL_UPDATE, new Object[]{equipmentModel.getRegistrado(),
+                equipmentModel.getImeiRegistrado(), equipmentModel.getMarcaTrafica(), equipmentModel.getModeloTrafica(),
+                equipmentModel.getImeiTrafica(), equipmentModel.getSim(), idEquipo});
     }
 }

@@ -9,4 +9,6 @@ public interface EquipmentRepository {
     List<EquipmentModel> findAllEquipments();
     List<EquipmentModel> findEquipment(String idEquipo);
     void createEquipment(EquipmentModel equipmentModel);
+    void deleteEquipment(String idEquipo);
+    void updateEquipment(EquipmentModel equipmentModel, String idEquipo);
 }

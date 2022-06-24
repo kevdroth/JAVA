@@ -12,7 +12,7 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="ControlClientes" options="-endorseddirs C:\Users\Kh31N\IdeaProjects\JAVA\Proyectos\ControlClientes\target/endorsed" />
+      <module name="ControlClientes" options="-endorseddirs C:\GITHUB\JAVA\Proyectos\ControlClientes\target/endorsed" />
     </option>
   </component>
 </project>

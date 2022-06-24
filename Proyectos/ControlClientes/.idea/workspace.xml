@@ -10,7 +10,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6973eeb3-9655-4957-aea1-797f65b733aa" name="Changes" comment="S66">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Movistar/src/main/java/ar/com/onwave/controller/EquipmentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Movistar/src/main/java/ar/com/onwave/controller/EquipmentController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Movistar/src/main/java/ar/com/onwave/repository/EquipmentRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Movistar/src/main/java/ar/com/onwave/repository/EquipmentRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Movistar/src/main/java/ar/com/onwave/repository/impl/EquipmentRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Movistar/src/main/java/ar/com/onwave/repository/impl/EquipmentRepositoryImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Movistar/src/main/java/ar/com/onwave/service/EquipmentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Movistar/src/main/java/ar/com/onwave/service/EquipmentService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Movistar/src/main/java/ar/com/onwave/service/impl/EquipmentServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Movistar/src/main/java/ar/com/onwave/service/impl/EquipmentServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,21 +71,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Kh31N/IdeaProjects/JAVA/Proyectos/ControlClientes&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/GITHUB/JAVA/Proyectos/ControlClientes"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;mysql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
     ]
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration name="Tomcat 9.0.63" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.63" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
       <option name="UPDATING_POLICY" value="restart-server" />
@@ -185,6 +190,7 @@
       <workItem from="1655342925296" duration="824000" />
       <workItem from="1655509014849" duration="666000" />
       <workItem from="1655521693100" duration="23000" />
+      <workItem from="1656095429273" duration="349000" />
     </task>
     <task id="LOCAL-00001" summary="S66">
       <created>1655343150578</created>

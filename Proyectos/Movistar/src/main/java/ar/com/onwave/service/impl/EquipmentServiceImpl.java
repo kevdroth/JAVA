@@ -30,4 +30,14 @@ public class EquipmentServiceImpl implements EquipmentService {
         this.equipmentRepository.createEquipment(equipmentModel);
     }
 
+    @Override
+    public void removeEquipment(String idEquipo) {
+        this.equipmentRepository.deleteEquipment(idEquipo);
+    }
+
+    @Override
+    public void modifyEquipment(EquipmentModel equipmentModel, String idEquipo) {
+        this.equipmentRepository.updateEquipment(equipmentModel, idEquipo);
+    }
+
 }
