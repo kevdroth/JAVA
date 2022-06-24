@@ -6,7 +6,6 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-//PORQUE DATA Y NO ENTITY Y QE ES JSONNAMING
 @Data
 @NoArgsConstructor
 @AllArgsConstructor

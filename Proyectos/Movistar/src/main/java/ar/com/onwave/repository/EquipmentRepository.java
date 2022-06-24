@@ -8,5 +8,5 @@ import java.util.List;
 public interface EquipmentRepository {
     List<EquipmentModel> findAllEquipments();
     List<EquipmentModel> findEquipment(String idEquipo);
-
+    void createEquipment(EquipmentModel equipmentModel);
 }

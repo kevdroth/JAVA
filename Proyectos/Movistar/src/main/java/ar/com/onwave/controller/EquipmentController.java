@@ -2,9 +2,7 @@ package ar.com.onwave.controller;
 
 import ar.com.onwave.repository.model.EquipmentModel;
 import ar.com.onwave.service.EquipmentService;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -23,8 +21,13 @@ public class EquipmentController {
         return this.equipmentService.getEquipments();
     }
 
-    @GetMapping("/equipment")
-    public List<EquipmentModel> getEquipment() {
-        return equipmentService.getEquipment();
+    @GetMapping("/equipment/{id_equipo}")
+    public List<EquipmentModel> getEquipment(@PathVariable(name = "id_equipo") String idEquipo) {
+        return equipmentService.getEquipment(idEquipo);
+    }
+
+    @PostMapping("/add")
+    public void addEquipment(@RequestBody EquipmentModel equipmentModel) {
+        equipmentService.addEquipment(equipmentModel);
     }
 }
