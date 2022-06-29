@@ -31,7 +31,7 @@ public class EquipmentController {
         equipmentService.addEquipment(equipmentModel);
     }
 
-    @GetMapping("remove/{id_equipo}")
+    @GetMapping("/remove/{id_equipo}")
     public void removeEquipment(@PathVariable(name = "id_equipo") Long idEquipo) {
         equipmentService.removeEquipment(idEquipo);
     }

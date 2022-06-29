@@ -34,7 +34,7 @@ public class LineController {
         lineService.addLine(lineModel);
     }
 
-    @GetMapping("remove/{id_linea}")
+    @GetMapping("/remove/{id_linea}")
     public void removeLine(Long idLinea) {
         lineService.removeLine(idLinea);
     }
