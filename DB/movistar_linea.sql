@@ -1,0 +1,16 @@
+INSERT INTO movistar.linea (id_linea, id_plan, numero) VALUES (1, 3, '1151615361');
+INSERT INTO movistar.linea (id_linea, id_plan, numero) VALUES (2, 3, '1151653819');
+INSERT INTO movistar.linea (id_linea, id_plan, numero) VALUES (3, 4, '1151655430');
+INSERT INTO movistar.linea (id_linea, id_plan, numero) VALUES (4, 3, '1151657653');
+INSERT INTO movistar.linea (id_linea, id_plan, numero) VALUES (5, 2, '1153276861');
+INSERT INTO movistar.linea (id_linea, id_plan, numero) VALUES (6, 3, '1140472441');
+INSERT INTO movistar.linea (id_linea, id_plan, numero) VALUES (7, 3, '1150472566');
+INSERT INTO movistar.linea (id_linea, id_plan, numero) VALUES (8, 3, '1140472674');
+INSERT INTO movistar.linea (id_linea, id_plan, numero) VALUES (9, 3, '1150876318');
+INSERT INTO movistar.linea (id_linea, id_plan, numero) VALUES (10, 3, '1540428233');
+INSERT INTO movistar.linea (id_linea, id_plan, numero) VALUES (11, 4, '1540428253');
+INSERT INTO movistar.linea (id_linea, id_plan, numero) VALUES (12, 3, '1540428338');
+INSERT INTO movistar.linea (id_linea, id_plan, numero) VALUES (13, 1, '1540428445');
+INSERT INTO movistar.linea (id_linea, id_plan, numero) VALUES (14, 3, '1540428572');
+INSERT INTO movistar.linea (id_linea, id_plan, numero) VALUES (15, 3, '1540428586');
+INSERT INTO movistar.linea (id_linea, id_plan, numero) VALUES (16, 3, '1541708803');
