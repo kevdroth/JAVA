@@ -3,42 +3,42 @@
       xmlns:th="http://www.thymeleaf.org"
       xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
     <head>
-        <title>Agregar Cliente</title>
+        <title>Agregar Plan</title>
         <meta charset="UTF-8"/>
     </head>
     <body>
-        <section th:fragment="agregarCliente">
-            <div id="agregarCliente" class="modal fade">
+        <section th:fragment="agregarPlan">
+            <div id="agregarPlan" class="modal fade">
                 <div class="modal-dialog modal-lg">
                     <div class="modal-content">
                         <div class="modal-header bg-info text-white">
-                            <h5 class="modal-title" th:text="#{accion.agregar}">Agregar Cliente</h5>
+                            <h5 class="modal-title" th:text="#{accion.agregar}">Agregar Plan</h5>
                             <button class="close" data-dismiss="modal">
                                 <span>&times;</span>
                             </button>
                         </div> 
-                        <form th:action="@{/guardar}" th:object="${persona}"
+                        <form th:action="@{/guardar}" th:object="${plan}"
                               method="POST" class="was-validated">
                             <div class="modal-body">
                                 <div class="form-group">
-                                    <label for="nombre" th:text="#{persona.nombre}">Nombre</label>
+                                    <label for="nombre" th:text="#{planes.nombre}">Nombre</label>
                                     <input type="text" class="form-control" name="nombre" required="true">
                                 </div>
                                 <div class="form-group">
-                                    <label for="apellido" th:text="#{persona.apellido}">Apelliudo</label>
-                                    <input type="text" class="form-control" name="apellido" required="true">
+                                    <label for="precio" th:text="#{planes.precio}">precio</label>
+                                    <input type="number" class="form-control" name="precio" required="true" step="any">
                                 </div>
                                 <div class="form-group">
-                                    <label for="email" th:text="#{persona.email}">Email</label>
-                                    <input type="email" class="form-control" name="email" required="true">
+                                    <label for="internet" th:text="#{planes.internet}">internet</label>
+                                    <input type="text" class="form-control" name="internet" required="true">
                                 </div>
                                 <div class="form-group">
-                                    <label for="telefono" th:text="#{persona.telefono}">Teléfono</label>
-                                    <input type="tel" class="form-control" name="telefono" required="true">
+                                    <label for="minutos" th:text="#{planes.minutos}">minutos</label>
+                                    <input type="text" class="form-control" name="minutos" required="true">
                                 </div>
                                 <div class="form-group">
-                                    <label for="saldo" th:text="#{persona.saldo}">Saldo</label>
-                                    <input type="number" class="form-control" name="saldo" required="true" step="any">
+                                    <label for="sms" th:text="#{planes.sms}">sms</label>
+                                    <input type="text" class="form-control" name="sms" required="true">
                                 </div>
                             </div>
                             <div class="modal-footer">
@@ -49,6 +49,5 @@
                 </div>
             </div>
         </section>
-
     </body>
 </html>

@@ -3,6 +3,8 @@ package ar.com.onwave.repository.model;
 import java.io.Serializable;
 import javax.persistence.*;
 import javax.validation.constraints.NotEmpty;
+
+import com.sun.istack.NotNull;
 import lombok.Data;
 
 @Entity

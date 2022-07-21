@@ -2,44 +2,56 @@ package ar.com.onwave.controller;
 
 import ar.com.onwave.repository.model.PlanModel;
 import ar.com.onwave.service.PlanService;
+import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.core.annotation.AuthenticationPrincipal;
+import org.springframework.security.core.userdetails.User;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.validation.Errors;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
 
-import java.util.List;
+import javax.validation.Valid;
 
-@RestController
-@RequestMapping("/api/v1/plan")
+@Controller
+@Slf4j
 public class PlanController {
+
+    @Autowired
     private PlanService planService;
 
-    public PlanController(PlanService planService) {
-        this.planService = planService;
+    @GetMapping("/")
+    public String inicio(Model model, @AuthenticationPrincipal User user){
+        var plans = planService.getPlans();
+        log.info("usuario que hizo login:" + user);
+        model.addAttribute("plans", plans);
+        return "index";
+    }
+    @GetMapping("/agregar")
+    public String agregar(PlanModel planModel){
+        return "modificar";
     }
 
-    @GetMapping("/getAll")
-    public List<PlanModel> getPlans() {
-        return planService.getPlans();
-    }
-
-    @GetMapping("/get/{idPlan}")
-    public List<PlanModel> getPlan(Long idPlan) {
-        return planService.getPlan(idPlan);
-    }
-
-    @PostMapping("/add")
-    public void addPlan(PlanModel planModel) {
+    @PostMapping("/guardar")
+    public String guardar(@Valid PlanModel planModel, Errors errores){
+        if(errores.hasErrors()){
+            return "modificar";
+        }
         planService.addPlan(planModel);
+        return "redirect:/";
     }
 
-    @PostMapping("/update/{idPlan}")
-    public void modifyPlan(PlanModel planModel, Long idPlan) {
-        planService.modifyPlan(planModel, idPlan);
+    @GetMapping("/editar/{idPlan}")
+    public String editar(PlanModel planModel, Model model){
+        planModel = planService.getPlan(planModel);
+        model.addAttribute("planModel", planModel);
+        return "modificar";
     }
 
-    @GetMapping("/delete/{idPlan}")
-    public void removePlan(Long idPlan) {
-        planService.removePlan(idPlan);
+    @GetMapping("/eliminar")
+    public String eliminar(PlanModel planModel){
+        planService.removePlan(planModel);
+        return "redirect:/";
     }
 }

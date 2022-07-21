@@ -6,8 +6,7 @@ import java.util.List;
 
 public interface PlanService {
     List<PlanModel> getPlans();
-    List<PlanModel> getPlan(Long idPlan);
     void addPlan(PlanModel planModel);
-    void modifyPlan(PlanModel planModel, Long idPlan);
-    void removePlan(Long idPlan);
+    void removePlan(PlanModel planModel);
+    PlanModel getPlan(PlanModel planModel);
 }

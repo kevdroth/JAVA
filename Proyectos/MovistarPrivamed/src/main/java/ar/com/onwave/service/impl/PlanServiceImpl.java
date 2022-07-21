@@ -1,42 +1,41 @@
 package ar.com.onwave.service.impl;
 
-import ar.com.onwave.repository.PlanRepository;
+import ar.com.onwave.repository.PlanDao;
 import ar.com.onwave.repository.model.PlanModel;
 import ar.com.onwave.service.PlanService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 
 @Service
 public class PlanServiceImpl implements PlanService {
-    private PlanRepository planRepository;
 
-    public PlanServiceImpl(PlanRepository planRepository) {
-        this.planRepository = planRepository;
-    }
+    @Autowired
+    private PlanDao planDao;
 
     @Override
+    @Transactional(readOnly = true)
     public List<PlanModel> getPlans() {
-        return planRepository.findAllPlans();
+        return (List<PlanModel>) planDao.findAll();
     }
 
     @Override
-    public List<PlanModel> getPlan(Long idPlan) {
-        return planRepository.findPlan(idPlan);
-    }
-
-    @Override
+    @Transactional
     public void addPlan(PlanModel planModel) {
-        planRepository.createPlan(planModel);
+        planDao.save(planModel);
     }
 
     @Override
-    public void modifyPlan(PlanModel planModel, Long idPlan) {
-        planRepository.updatePlan(planModel, idPlan);
+    @Transactional
+    public void removePlan(PlanModel planModel) {
+        planDao.delete(planModel);
     }
 
     @Override
-    public void removePlan(Long idPlan) {
-        planRepository.deletePlan(idPlan);
+    @Transactional(readOnly = true)
+    public PlanModel getPlan(PlanModel planModel) {
+        return planDao.findById(planModel.getIdPlan()).orElse(null);
     }
 }
