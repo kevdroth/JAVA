@@ -21,12 +21,12 @@ public class PlanController {
     @Autowired
     private PlanService planService;
 
-    @GetMapping("/")
+    @GetMapping("/listar")
     public String inicio(Model model, @AuthenticationPrincipal User user){
         var plans = planService.getPlans();
         log.info("usuario que hizo login:" + user);
         model.addAttribute("plans", plans);
-        return "index";
+        return "planes";
     }
     @GetMapping("/agregar")
     public String agregar(PlanModel planModel){

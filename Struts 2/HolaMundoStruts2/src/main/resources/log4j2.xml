@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Configuration>
+    <Appenders>
+        <Console name="STDOUT" target="SYSTEM_OUT">
+            <PatterLayout pattern="(%F:%L) - %m%n"></PatterLayout>
+        </Console>
+    </Appenders>
+    <Loggers>
+        <Logger name="com.opensymphony.xwork2" level="info"></Logger>
+        <Logger name="org.apache.struts2" level="info"></Logger>
+        <Root level="info">
+            <AppenderRef ref="STDOUT"></AppenderRef>
+        </Root>
+    </Loggers>
+</Configuration>
