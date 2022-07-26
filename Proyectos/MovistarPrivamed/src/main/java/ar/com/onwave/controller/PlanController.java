@@ -52,6 +52,6 @@ public class PlanController {
     @GetMapping("/eliminar")
     public String eliminar(PlanModel planModel){
         planService.removePlan(planModel);
-        return "redirect:/";
+        return "planes";
     }
 }
