@@ -18,7 +18,7 @@ public class PlanServiceImpl implements PlanService {
     @Override
     @Transactional(readOnly = true)
     public List<PlanModel> getPlans() {
-        return (List<PlanModel>) planDao.findAll();
+        return planDao.findAll();
     }
 
     @Override

@@ -38,13 +38,13 @@
                                             <td>[[${plan.minutos}]]</td>
                                             <td>[[${plan.sms}]]</td>
                                             <td>
-                                                <a sec:authorize="hasRole('ROLE_ADMIN')" th:href="@{/editar/} + ${plan.idPlan}"
+                                                <a sec:authorize="hasRole('ROLE_ADMIN')" th:href="@{/editarPlanes/} + ${plan.idPlan}"
                                                    class="btn btn-secondary">
                                                     <i class="fas fa-angle-double-right"></i> [[#{accion.editar}]]
                                                 </a>
                                             </td>
                                             <td>
-                                                <a sec:authorize="hasRole('ROLE_ADMIN')" th:href="@{/eliminar(idPlan=${plan.idPlan})}"
+                                                <a sec:authorize="hasRole('ROLE_ADMIN')" th:href="@{/eliminarPlanes(idPlan=${plan.idPlan})}"
                                                    class="btn btn-dark">
                                                     <i class="fas fa-angle-double-right"></i> [[#{accion.eliminar}]]
                                                 </a>

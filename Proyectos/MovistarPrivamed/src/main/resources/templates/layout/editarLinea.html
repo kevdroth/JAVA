@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+<head>
+  <meta charset="UTF-8"/>
+  <title>Editar Linea</title>
+</head>
+<body>
+<section th:fragment="editarLinea">
+  <form th:action="@{/guardarLineas}" th:object="${linea}" method="post" class="was-validated">
+    <input type="hidden" name="idLinea" th:field="*{idLinea}"/>
+    <section th:replace="layout/botonesEditarLineas" :: botonesEditarLineas></section>
+    <div id="details">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <div class="card">
+              <div class="card-header">
+                <h4>[[#{accion.editar}]]</h4>
+              </div>
+              <div class="card-body">
+                <div class="form-group">
+                  <label for="numero">[[#{linea.numero}]]</label>
+                  <input type="text" class="form-control" name="numero" required="true" th:field="*{numero}">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </form>
+</section>
+</body>
+</html>

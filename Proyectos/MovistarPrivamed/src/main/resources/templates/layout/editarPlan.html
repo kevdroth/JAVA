@@ -8,9 +8,9 @@
 </head>
 <body>
 <section th:fragment="editarPlan">
-    <form th:action="@{/guardar}" th:object="${plan}" method="post" class="was-validated">
+    <form th:action="@{/guardarPlanes}" th:object="${plan}" method="post" class="was-validated">
         <input type="hidden" name="idPlan" th:field="*{idPlan}"/>
-        <section th:replace="layout/botonesEditar" :: botonesEditar></section>
+        <section th:replace="layout/botonesEditarPlanes" :: botonesEditarPlanes></section>
         <div id="details">
             <div class="container">
                 <div class="row">

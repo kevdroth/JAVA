@@ -21,7 +21,7 @@ public class PlanController {
     @Autowired
     private PlanService planService;
 
-    @GetMapping("/listar")
+    @GetMapping("/listarPlanes")
     public String inicio(Model model, @AuthenticationPrincipal User user){
         var plans = planService.getPlans();
         log.info("usuario que hizo login:" + user);
@@ -30,26 +30,26 @@ public class PlanController {
     }
     @GetMapping("/agregar")
     public String agregar(PlanModel planModel){
-        return "modificar";
+        return "modificarPlanes";
     }
 
-    @PostMapping("/guardar")
+    @PostMapping("/guardarPlan")
     public String guardar(@Valid PlanModel planModel, Errors errores){
         if(errores.hasErrors()){
-            return "modificar";
+            return "modificarPlanes";
         }
         planService.addPlan(planModel);
         return "redirect:/";
     }
 
-    @GetMapping("/editar/{idPlan}")
+    @GetMapping("/editarPlanes/{idPlan}")
     public String editar(PlanModel planModel, Model model){
         planModel = planService.getPlan(planModel);
         model.addAttribute("planModel", planModel);
-        return "modificar";
+        return "modificarPlanes";
     }
 
-    @GetMapping("/eliminar")
+    @GetMapping("/eliminarPlanes")
     public String eliminar(PlanModel planModel){
         planService.removePlan(planModel);
         return "planes";

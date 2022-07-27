@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:th="http://www.thymeleaf.org"
       xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
@@ -7,12 +6,12 @@
     <title>Botones Editar</title>
 </head>
 <body>
-<section th:fragment="botonesEditar">
+<section th:fragment="botonesEditarLineas">
     <div id="actions" class="py-4 mb-4 bg-light">
         <div class="container">
             <div class="row">
                 <div class="col-md-3">
-                    <a th:href="@{/}" class="btn btn-light btn-block">
+                    <a th:href="@{/lineas}" class="btn btn-light btn-block">
                         <i class="fas fa-arrow-left"></i> [[#{accion.regresar}]]
                     </a>
                 </div>
@@ -22,7 +21,7 @@
                     </button>
                 </div>
                 <div class="col-md-3">
-                    <a th:href="@{/eliminar(idPlan=${plan.idPlan})}" class="btn btn-danger btn-block">
+                    <a th:href="@{/eliminarLineas(idPlan=${linea.idLinea})}" class="btn btn-danger btn-block">
                         <i class="fas fa-trash"></i> [[#{accion.eliminar}]]
                     </a>
                 </div>
